@@ -1,4 +1,4 @@
-FROM docker.datalan.sk/karaf:4.0-alpine
+FROM hlavki/karaf:4.0-alpine
 MAINTAINER Michal Hlavac <miso@hlavki.eu>
 
 ENV CELLAR_VERSION 4.0.3
