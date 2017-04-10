@@ -3,7 +3,7 @@ MAINTAINER Michal Hlavac <miso@hlavki.eu>
 
 ENV KARAF_USER karaf
 ENV KARAF_UID 8181
-ENV KARAF_VERSION 4.0.8
+ENV KARAF_VERSION 4.0.9
 ENV JAVA_MAX_MEM 256m
 
 RUN apk add --update bash tar && rm -rf /var/cache/apk/*

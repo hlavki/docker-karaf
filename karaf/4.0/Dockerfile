@@ -4,7 +4,7 @@ MAINTAINER Michal Hlavac <miso@hlavki.eu>
 ENV KARAF_USER karaf
 ENV KARAF_UID 8181
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
-ENV KARAF_VERSION 4.0.8
+ENV KARAF_VERSION 4.0.9
 ENV JAVA_MAX_MEM 256m
 
 RUN groupadd -r $KARAF_USER --gid=$KARAF_UID && useradd -rm -g $KARAF_USER --uid=$KARAF_UID $KARAF_USER
