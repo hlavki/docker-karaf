@@ -1,10 +1,11 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:8-alpine
 MAINTAINER Michal Hlavac <miso@hlavki.eu>
 
 ENV KARAF_USER karaf
 ENV KARAF_UID 8181
-ENV KARAF_VERSION 4.1.1
+ENV KARAF_VERSION 4.1.2
 ENV JAVA_MAX_MEM 256m
+ENV KARAF_EXEC exec
 
 RUN apk add --update bash tar && rm -rf /var/cache/apk/*
 
@@ -29,4 +30,4 @@ EXPOSE 1099 8101 44444
 
 USER $KARAF_USER
 
-CMD ["/opt/karaf/bin/karaf", "daemon"]
+CMD ["/opt/karaf/bin/karaf", "run"]
