@@ -18,7 +18,6 @@ RUN wget http://www-eu.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KAR
     && rm apache-karaf-${KARAF_VERSION}.tar.gz \
     && mkdir -p /opt/karaf/data /opt/karaf/data/log \
     && chown -R $KARAF_USER.$KARAF_USER /opt/karaf \
-    && sed -i 's/log4j\.rootLogger=INFO,\ out,\ osgi\:\*/log4j\.rootLogger=INFO,\ out,\ stdout,\ osgi\:\*/' /opt/karaf/etc/org.ops4j.pax.logging.cfg \
     && echo org.ops4j.pax.url.mvn.defaultRepositories = file:///opt/maven/repository@id=local.app@snapshots  >> /opt/karaf/etc/org.ops4j.pax.url.mvn.cfg
 
 EXPOSE 1099 8101 44444
