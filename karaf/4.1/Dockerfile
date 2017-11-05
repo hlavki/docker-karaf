@@ -4,7 +4,7 @@ MAINTAINER Michal Hlavac <miso@hlavki.eu>
 ENV KARAF_USER karaf
 ENV KARAF_UID 8181
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
-ENV KARAF_VERSION 4.1.2
+ENV KARAF_VERSION 4.1.3
 ENV JAVA_MAX_MEM 256m
 ENV KARAF_EXEC exec
 
