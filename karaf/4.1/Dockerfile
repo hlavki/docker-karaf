@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:8-slim
 MAINTAINER Michal Hlavac <miso@hlavki.eu>
 
 ENV KARAF_USER karaf
@@ -12,7 +12,7 @@ COPY download.sh /tmp/download.sh
 
 RUN groupadd -r $KARAF_USER --gid=$KARAF_UID && useradd -rm -g $KARAF_USER --uid=$KARAF_UID $KARAF_USER
 
-RUN apt-get update && apt-get install -y --no-install-recommends jq && rm -rf /var/lib/apt/lists/* \
+RUN apt-get update && apt-get install -y --no-install-recommends jq curl && rm -rf /var/lib/apt/lists/* \
     && chmod a+x /tmp/download.sh && sync && /tmp/download.sh && rm /tmp/download.sh \
     && mkdir -p /opt/karaf \
     && tar --strip-components=1 -C /opt/karaf -xzf /tmp/apache-karaf.tar.gz \
