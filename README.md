@@ -25,12 +25,12 @@ docker run --name some-karaf -d \
 The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your `karaf` container:
 
 ```bash
-docker exec -it some-karaf bash
+docker exec -it some-karaf /opt/karaf/bin/client
 ```
 
 The Karaf container log is available through Docker's container log:
 ```bash
-docker logs -ft some-karaf
+docker logs -f some-karaf
 ```
 
 # Environment variables
@@ -72,7 +72,7 @@ docker run --name some-karaf -d \
 
 # Where to store data
 Karaf docker image doesn't create volume from `data` directory. So it means it's stored in container. It's automatically removed If you remove container. But if you need to have `data` folder persistent, you can create volume or named volume.
- 
+
 ```bash
 docker run --name some-karaf -v /opt/karaf/data -d hlavki/karaf
 ```
