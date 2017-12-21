@@ -2,10 +2,10 @@
 
 # Supported tags and respective `Dockerfile` links
 
- - `4.0.9`, `4.0` ([4.0/Dockerfile](https://github.com/hlavki/docker-karaf/blob/master/karaf/4.0/Dockerfile))
- - `4.0.9-alpine`, `4.0-alpine` ([4.0-alpine/Dockerfile](https://github.com/hlavki/docker-karaf/blob/master/karaf/4.0-alpine/Dockerfile))
- - `4.1.3`, `4.1`, `4`, `latest` ([4.1/Dockerfile](https://github.com/hlavki/docker-karaf/blob/master/karaf/4.1/Dockerfile))
- - `4.1.3-alpine`, `4.1-alpine`, `4-alpine` ([4.1-alpine/Dockerfile](https://github.com/hlavki/docker-karaf/blob/master/karaf/4.1-alpine/Dockerfile))
+ - `4.0.10`, `4.0` ([4.0/Dockerfile](https://github.com/hlavki/docker-karaf/blob/master/karaf/4.0/Dockerfile))
+ - `4.0.10-alpine`, `4.0-alpine` ([4.0-alpine/Dockerfile](https://github.com/hlavki/docker-karaf/blob/master/karaf/4.0-alpine/Dockerfile))
+ - `4.1.4`, `4.1`, `4`, `latest` ([4.1/Dockerfile](https://github.com/hlavki/docker-karaf/blob/master/karaf/4.1/Dockerfile))
+ - `4.1.4-alpine`, `4.1-alpine`, `4-alpine` ([4.1-alpine/Dockerfile](https://github.com/hlavki/docker-karaf/blob/master/karaf/4.1-alpine/Dockerfile))
 
 # What is Karaf
 
